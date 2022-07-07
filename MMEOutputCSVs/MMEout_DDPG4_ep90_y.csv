@@ -1,0 +1,220 @@
+"Complexity: 8, max RMS clamp: 20, min RMS clamp: -50"
+"div(div(sub(var4, var3), sub(2.080000, var6)), -39.460000)",0.642987,0.718008,8,75 / 75
+"div(mul(var4, -0.470000), add(-42.260000, mul(var5, 88.090000)))",0.640354,0.729992,8,75 / 75
+"div(var0, sub(-0.120000, sub(-99.130000, mul(var6, -47.500000))))",0.635407,0.749723,8,75 / 75
+
+"Complexity: 8, max RMS clamp: 20, min RMS clamp: -20"
+"div(var0, mul(var2, sub(-47.610000, div(-99.240000, var6))))",0.631895,0.748046,8,75 / 75
+"div(var11, add(sub(6.760000, mul(var1, 99.830000)), var8))",0.642523,0.816532,8,75 / 75
+"div(add(div(var4, sub(2.080000, var6)), var7), -24.130000)",0.645278,0.730558,8,75 / 75
+
+"Complexity: 12, max RMS clamp: 50"
+"div(add(0.350000, sub(var0, var4)), mul(3.760000, add(-44.310000, div(92.400000, var6))))",0.637973,0.703127,12,75 / 75
+"div(div(var4, sub(add(-98.990000, pow(var6, 6.260000)), var3)), add(-1.970000, var6))",0.631122,0.705404,12,75 / 75
+"div(var3, sub(-0.150000, div(div(add(sub(-1.590000, var1), var6), -0.120000), -0.180000)))",0.637065,0.74006,12,75 / 75
+"sub(div(sub(var7, add(var1, var0)), sub(-99.940000, div(-50.030000, var1))), var8)",0.638065,0.74826,12,75 / 75
+"div(sub(var0, var4), add(var8, add(var6, add(98.430000, div(-48.270000, var5)))))",0.63906,0.706009,12,75 / 75
+
+"Complexity: 12, max RMS clamp: 0.75"
+"div(div(3.810000, var6), mul(var6, add(var0, add(-47.670000, div(97.090000, var6)))))",0.643426,0.386056,12,75 / 75
+"inv(mul(neg(mul(add(99.810000, var7), sub(1.210000, var0))), add(-2.080000, var6)))",0.6389,0.388348,12,75 / 75
+"div(add(-1.070000, var4), sub(pow(var6, 3.840000), mul(-0.750000, sub(-21.230000, var0))))",0.610054,0.381061,12,75 / 75
+"div(var5, add(27.060000, add(mul(var5, var0), mul(var6, -13.230000))))",0.630895,0.386153,10,75 / 75
+"div(sub(1.000000, var7), sub(sub(add(97.600000, var0), mul(var6, 47.310000)), var8))",0.644565,0.374866,12,75 / 75
+
+"Complexity: 8, max RMS clamp: 0.75"
+"div(0.980000, sub(add(14.290000, var0), pow(var6, 3.720000)))",0.642669,0.386087,8,75 / 75
+"div(1.490000, add(90.460000, mul(var6, add(-44.380000, var3))))",0.615231,0.393019,8,75 / 75
+"inv(add(var0, sub(60.210000, div(29.400000, var5))))",0.648841,0.386286,7,75 / 75
+"div(sub(var4, var0), add(-42.620000, pow(var6, 5.100000)))",0.596884,0.394756,8,75 / 75
+
+"targetComplexity=6, maxRMSClamp=0.5"
+"div(0.160000, sub(0.960000, sub(var6, var0)))",0.606264,0.38174,6,75 / 75
+
+"targetComplexity=6, maxRMSClamp=0.75"
+"div(var0, add(99.060000, mul(var6, -47.490000)))",0.596315,0.415196,6,75 / 75
+
+"targetComplexity=6, maxRMSClamp=1"
+"div(var3, sub(32.900000, pow(var2, 5.040000)))",0.603763,0.45179,6,75 / 75
+
+"targetComplexity=8, maxRMSClamp=0.5"
+"inv(sub(add(15.820000, var3), pow(var5, -3.840000)))",0.610146,0.36397,7,75 / 75
+
+"targetComplexity=8, maxRMSClamp=0.75"
+"div(var5, add(var0, mul(-22.960000, sub(0.550000, var1))))",0.618288,0.407194,8,75 / 75
+
+"targetComplexity=8, maxRMSClamp=1"
+"div(var5, add(-34.360000, mul(var5, add(70.570000, var0))))",0.649901,0.414361,8,75 / 75
+
+"targetComplexity=9, maxRMSClamp=0.5"
+"inv(mul(2.750000, sub(var0, div(pow(var6, 6.430000), 99.630000))))",0.61148,0.366761,9,75 / 75
+
+"targetComplexity=9, maxRMSClamp=0.75"
+"div(-0.920000, add(-13.410000, sub(pow(var5, -3.640000), var0)))",0.616347,0.386061,8,75 / 75
+
+"targetComplexity=9, maxRMSClamp=1"
+"div(-0.790000, sub(add(-17.270000, pow(var5, -3.950000)), var3))",0.613142,0.419829,8,75 / 75
+
+"targetComplexity=10, maxRMSClamp=0.5"
+"inv(sub(add(-46.770000, mul(var5, 99.550000)), sub(var6, var0)))",0.648711,0.357381,9,75 / 75
+
+"targetComplexity=10, maxRMSClamp=0.75"
+"div(var5, sub(-29.630000, sub(mul(var5, -60.690000), div(var0, var6))))",0.643144,0.386286,10,75 / 75
+
+"targetComplexity=10, maxRMSClamp=1"
+"div(mul(var5, 1.760000), add(var0, add(49.570000, mul(var6, -24.300000))))",0.644949,0.4139,10,75 / 75
+
+"targetComplexity=12, maxRMSClamp=0.5"
+"mul(div(var0, add(46.030000, div(-95.880000, var6))), sub(div(var0, -2.010000), var1))",0.624945,0.376318,12,75 / 75
+
+"targetComplexity=12, maxRMSClamp=0.75"
+"sub(inv(add(var0, sub(61.630000, mul(-30.080000, neg(var6))))), var8)",0.64727,0.38374,10,75 / 75
+
+"targetComplexity=12, maxRMSClamp=1"
+"sub(div(0.630000, add(var3, add(mul(-19.700000, add(-2.010000, var6)), var1))), var8)",0.637582,0.412341,12,75 / 75
+
+"targetComplexity=14, maxRMSClamp=0.5"
+"div(add(0.320000, var5), add(-44.590000, add(mul(var0, 0.780000), div(91.180000, var6))))",0.643145,0.357074,12,75 / 75
+
+"targetComplexity=14, maxRMSClamp=0.75"
+"sub(inv(add(-48.660000, add(var0, div(-99.130000, sub(pow(var9, 17.890000), var6))))), var8)",0.649947,0.38544,13,75 / 75
+
+"targetComplexity=14, maxRMSClamp=1"
+"div(var5, add(var8, add(mul(1.810000, div(sub(var1, var6), var5)), add(4.960000, var3))))",0.639296,0.417115,14,75 / 75
+
+
+"targetComplexity=6, maxRMSClamp=0.05"
+"div(var0, sub(51.690000, mul(var6, 24.810000)))",0.630078,0.342086,6,75 / 75
+
+"targetComplexity=6, maxRMSClamp=0.1"
+"div(div(var0, -17.390000), add(-2.080000, var6))",0.637497,0.349678,6,75 / 75
+
+"targetComplexity=6, maxRMSClamp=0.3"
+"div(pow(var5, 2.600000), add(-1.130000, var0))",0.598233,0.368801,6,75 / 75
+
+"targetComplexity=6, maxRMSClamp=0.5"
+"div(var0, mul(-19.370000, add(-2.080000, var6)))",0.639937,0.397481,6,75 / 75
+
+"targetComplexity=8, maxRMSClamp=0.05"
+"div(1.190000, add(add(52.370000, mul(var6, -25.610000)), var3))",0.618077,0.316291,8,75 / 75
+
+"targetComplexity=8, maxRMSClamp=0.1"
+"mul(var0, div(-0.170000, add(-4.640000, pow(var6, 2.090000))))",0.628081,0.347513,8,75 / 75
+
+"targetComplexity=8, maxRMSClamp=0.3"
+"inv(sub(var3, add(-57.950000, div(28.270000, var5))))",0.615432,0.340833,7,75 / 75
+
+"targetComplexity=8, maxRMSClamp=0.5"
+"inv(sub(add(51.020000, var0), mul(var6, 25.000000)))",0.643422,0.357163,7,75 / 75
+
+"targetComplexity=10, maxRMSClamp=0.05"
+"mul(var2, div(-0.580000, add(-52.300000, sub(mul(var6, 25.620000), var0))))",0.642227,0.307051,10,75 / 75
+
+"targetComplexity=10, maxRMSClamp=0.1"
+"mul(div(var3, sub(-0.400000, div(var5, -1.200000))), pow(var1, 6.550000))",0.617034,0.342682,10,75 / 75
+
+"targetComplexity=10, maxRMSClamp=0.3"
+"div(add(0.830000, sub(var0, var4)), add(99.600000, mul(var6, -47.850000)))",0.632327,0.34463,10,75 / 75
+
+"targetComplexity=10, maxRMSClamp=0.5"
+"div(pow(mul(var5, 2.090000), 97.730000), add(-1.210000, var0))",0.609725,0.367628,8,75 / 75
+
+"targetComplexity=6, maxRMSClamp=0.001"
+"div(var2, mul(39.950000, sub(2.060000, var6)))",0.641921,0.363568,6,75 / 75
+"inv(add(add(-37.900000, var0), mul(var5, 76.660000)))",0.704422,0.303249,7,75 / 75
+"div(0.260000, add(sub(0.950000, var6), var0))",0.612809,0.329543,6,75 / 75
+"div(0.230000, add(sub(0.980000, var2), var3))",0.612023,0.339084,6,75 / 75
+"div(var0, add(47.720000, mul(var6, -22.910000)))",0.628804,0.336516,6,75 / 75
+"div(0.390000, sub(mul(var0, 1.840000), var6))",0.604558,0.335046,6,75 / 75
+"div(div(var0, -17.000000), add(-2.080000, var6))",0.638541,0.337616,6,75 / 75
+"mul(-22.680000, pow(mul(var5, 1.890000), 27.300000))",0.63913,0.374343,6,75 / 75
+"div(div(var0, sub(2.080000, var6)), 17.000000)",0.637329,0.337616,6,75 / 75
+
+"targetComplexity=6, maxRMSClamp=0.01"
+"div(var3, add(-45.690000, div(95.170000, var6)))",0.639654,0.338416,6,75 / 75
+"div(pow(var5, 2.510000), add(-1.130000, var0))",0.613194,0.344619,6,75 / 75
+"div(div(var0, sub(0.480000, var5)), -100.000000)",0.632463,0.337554,6,75 / 75
+"div(var7, sub(37.970000, mul(var5, 79.050000)))",0.628407,0.343851,6,75 / 75
+"div(var0, sub(-47.740000, div(-99.440000, var6)))",0.634641,0.337265,6,75 / 75
+"div(var0, add(-47.650000, mul(var5, 99.250000)))",0.627622,0.337266,6,75 / 75
+"div(var4, add(-36.920000, mul(var6, 17.740000)))",0.630931,0.343933,6,75 / 75
+"div(div(var0, add(-2.080000, var6)), -17.010000)",0.638428,0.338922,6,75 / 75
+"mul(-1.920000, pow(mul(var5, 2.070000), 27.960000))",0.638505,0.375009,6,75 / 75
+
+"targetComplexity=6, maxRMSClamp=0.05"
+"div(pow(var5, 2.530000), add(-1.130000, var0))",0.615021,0.347061,6,75 / 75
+"div(var0, sub(51.440000, mul(var6, 24.690000)))",0.6297,0.342086,6,75 / 75
+"div(var0, add(51.920000, mul(var6, -24.920000)))",0.618577,0.342085,6,75 / 75
+"div(div(var5, -3.290000), sub(1.130000, var0))",0.6076,0.348582,6,75 / 75
+"div(var0, mul(-17.250000, add(-2.080000, var6)))",0.63889,0.343839,6,75 / 75
+"div(0.280000, add(0.860000, sub(var0, var2)))",0.592498,0.339436,6,75 / 75
+"inv(add(36.650000, add(var0, mul(var6, -18.120000))))",0.702673,0.309098,7,75 / 75
+"div(var0, add(-47.750000, mul(var5, 99.460000)))",0.63746,0.342123,6,75 / 75
+"div(0.250000, add(sub(0.950000, var6), var0))",0.6214,0.333944,6,75 / 75
+
+"targetComplexity=6, maxRMSClamp=0.5"
+"div(var0, add(99.780000, mul(var6, -47.830000)))",0.633245,0.388482,6,75 / 75
+"div(var0, sub(-47.990000, mul(var5, -99.950000)))",0.64057,0.393757,6,75 / 75
+"div(var0, add(95.060000, mul(var6, -45.570000)))",0.61291,0.388522,6,75 / 75
+"div(0.160000, sub(var0, add(-0.960000, var6)))",0.606518,0.38174,6,75 / 75
+"div(-0.280000, sub(var6, mul(var0, 1.850000)))",0.609255,0.385719,6,75 / 75
+"div(0.160000, sub(add(0.960000, var0), var6))",0.623677,0.38174,6,75 / 75
+"inv(add(add(-48.490000, mul(var5, 98.780000)), var0))",0.708333,0.357604,7,75 / 75
+"div(var0, sub(23.270000, pow(var5, -4.280000)))",0.58462,0.388383,6,75 / 75
+"div(var0, sub(-47.880000, div(-99.720000, var6)))",0.631034,0.393794,6,75 / 75
+
+"targetComplexity=8, maxRMSClamp=0.001"
+"div(var9, add(-23.430000, div(add(47.720000, var0), var6)))",0.642719,0.302748,8,75 / 75
+"div(sub(var4, var0), sub(-71.590000, mul(var6, -34.370000)))",0.612866,0.320759,8,75 / 75
+"div(sub(var0, var4), sub(71.400000, mul(var6, 34.280000)))",0.617897,0.320754,8,75 / 75
+"div(1.160000, add(add(44.220000, mul(var6, -21.750000)), var0))",0.619451,0.305011,8,75 / 75
+"div(-1.040000, sub(add(47.020000, div(-95.900000, var6)), var3))",0.60004,0.310937,8,75 / 75
+"div(-1.230000, add(-45.840000, sub(mul(var6, 22.530000), var0)))",0.600688,0.304898,8,75 / 75
+"div(1.220000, add(var0, add(-48.620000, div(99.010000, var6))))",0.625545,0.302808,8,75 / 75
+"mul(var2, add(add(46.970000, div(-99.630000, var6)), var4))",0.634808,0.346112,8,75 / 75
+"inv(add(mul(var5, 89.770000), add(-44.080000, var3)))",0.609514,0.311116,7,75 / 75
+
+"targetComplexity=8, maxRMSClamp=0.01"
+"div(sub(var0, var7), add(72.390000, mul(var6, -34.750000)))",0.624864,0.32188,8,75 / 75
+"div(var5, sub(div(var3, add(-1.580000, var6)), var2))",0.65,0.325723,8,75 / 75
+"div(pow(var5, 1.760000), add(0.950000, sub(var0, var6)))",0.619908,0.329704,8,75 / 75
+
+"targetComplexity=8, maxRMSClamp=0.001"
+"div(var6, add(add(98.970000, mul(var6, -47.970000)), var3))",0.611355,0.312599,8,75 / 75
+"mul(-75.920000, pow(div(var5, sub(var10, var0)), 10.200000))",0.624288,0.354319,8,75 / 75
+"div(0.290000, sub(var0, sub(var6, mul(var5, 1.980000))))",0.611198,0.325613,8,75 / 75
+
+"targetComplexity=8, maxRMSClamp=0.01"
+"div(pow(var5, 1.760000), sub(add(0.950000, var0), var6))",0.613866,0.329704,8,75 / 75
+"div(var6, sub(76.410000, mul(var6, sub(37.780000, var0))))",0.637449,0.304085,8,75 / 75
+"inv(sub(add(21.780000, var0), div(pow(var6, 1.680000), 0.150000)))",0.662725,0.306666,9,75 / 75
+
+"targetComplexity=8, maxRMSClamp=0.05"
+"div(3.380000, sub(div(var0, 0.100000), pow(var6, 3.310000)))",0.61559,0.327916,8,75 / 75
+"div(0.290000, add(sub(div(1.980000, var6), var6), var0))",0.623464,0.33004,8,75 / 75
+"div(div(var0, sub(-25.020000, div(-52.130000, var6))), var2)",0.623936,0.340389,8,75 / 75
+
+"targetComplexity=8, maxRMSClamp=0.5"
+"div(var5, add(add(-11.740000, var0), mul(var1, 21.180000)))",0.603771,0.37908,8,75 / 75
+"div(add(-0.500000, var7), pow(mul(var5, 2.120000), -97.100000))",0.639937,0.373807,8,75 / 75
+"inv(add(-48.520000, sub(var0, div(-98.840000, var6))))",0.60491,0.35761,7,75 / 75
+
+"targetComplexity=10, maxRMSClamp=0.001"
+"div(add(-1.070000, var5), add(24.550000, mul(var5, sub(-50.060000, var0))))",0.634702,0.301703,10,75 / 75
+"mul(2.420000, sub(var4, div(sub(-35.290000, mul(var5, -74.670000)), var5)))",0.633959,0.339074,10,75 / 75
+"div(pow(var1, 8.300000), div(add(sub(1.070000, var6), var3), 73.560000))",0.601803,0.333723,10,75 / 75
+
+"targetComplexity=10, maxRMSClamp=0.01"
+"div(sub(2.570000, div(sub(var4, var0), add(-2.080000, var6))), -27.720000)",0.635795,0.31705,10,75 / 75
+"neg(inv(sub(43.640000, add(add(var1, mul(var5, 87.840000)), var3))))",0.610924,0.306238,10,75 / 75
+"div(sub(var6, var4), add(add(99.320000, var0), mul(var6, -48.200000)))",0.630567,0.29951,10,75 / 75
+
+"targetComplexity=10, maxRMSClamp=0.05"
+"div(sub(-0.710000, sub(var3, var4)), add(-23.260000, pow(var6, 4.290000)))",0.626502,0.322842,10,75 / 75
+"div(sub(var6, var4), add(98.450000, div(add(-48.350000, var0), var5)))",0.637322,0.303149,10,75 / 75
+"div(0.460000, sub(div(var1, 0.150000), sub(div(var6, var5), var3)))",0.589536,0.325063,10,75 / 75
+
+"targetComplexity=10, maxRMSClamp=0.5"
+"mul(sub(var4, var0), div(var1, mul(-82.880000, add(-0.480000, var5))))",0.617772,0.374263,10,75 / 75
+"div(mul(-98.880000, pow(var2, -8.770000)), sub(var6, add(1.070000, var3)))",0.602069,0.374361,10,75 / 75
+"div(div(var1, sub(add(var3, mul(var1, 2.140000)), var6)), var6)",0.628052,0.3769,10,75 / 75
