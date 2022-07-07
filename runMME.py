@@ -82,36 +82,37 @@ def edit_json_params(json_dict, param1_str, param1_list, param2_str, param2_list
     json_dict[param1_str] = param1_list
     json_dict[param2_str] = param2_list
     
-def runMME_different_config(path_to_MME_input_data, path_to_MME_output_data, path_to_input_json, path_to_output_json, param1_str, param1_list, param2_str, param2_list):
+def runMME_different_config(change_params_bool, path_to_MME_input_data, path_to_MME_output_data, num_loops, path_to_input_json, path_to_output_json, param1_str, param1_list, param2_str, param2_list):
     with open(path_to_input_json, 'r+') as f:
         config = json.load(f)
 
-    for i in range(len(param1_list)):
-        for j in range(len(param2_list)):
-            edit_json_params(config, param1_str, param1_list[i], param2_str, param2_list[j])  # Edits the json parameters
-            with open(path_to_output_json, 'w', encoding='utf-8') as f:                         # Writes new parameters to file
-                json.dump(config, f, ensure_ascii=False, indent=4)
-            #print newline, then line to output csv about metaparameters changed
-            with open(path_to_MME_output_data, "a", newline = '') as f2:
-                writer = csv.writer(f2)
-                writer.writerow('')
-                writer.writerow([str(param1_str + '=' + str(param1_list[i]) + ', ' + param2_str + '=' + str(param2_list[j]))])
-            runMME_with_xy_outputs(path_to_MME_input_data, path_to_MME_output_data, 3)          # Run mme with new parameters, loop 3 times for more data
-
+	if change_params_bool:
+		for i in range(len(param1_list)):
+			for j in range(len(param2_list)):
+				edit_json_params(config, param1_str, param1_list[i], param2_str, param2_list[j])  # Edits the json parameters
+				with open(path_to_output_json, 'w', encoding='utf-8') as f:                         # Writes new parameters to file
+					json.dump(config, f, ensure_ascii=False, indent=4)
+					#print newline, then line to output csv about metaparameters changed
+				with open(path_to_MME_output_data, "a", newline = '') as f2:
+					writer = csv.writer(f2)
+					writer.writerow('')
+					writer.writerow([str(param1_str + '=' + str(param1_list[i]) + ', ' + param2_str + '=' + str(param2_list[j]))])
+				runMME_with_xy_outputs(path_to_MME_input_data, path_to_MME_output_data, num_loops)          # Run mme with new parameters, loop n times for more data
+	else:
+		runMME_with_xy_outputs(path_to_MME_input_data, path_to_MME_output_data, num_loops)
 
 def main():
     path_to_MME_input_data = os.path.expanduser('./MMEInputCSVs') + '/DDPG4_ep90_Data_y.csv'
     path_to_MME_output_data = os.path.expanduser('./MMEOutputCSVs') + '/MMEout_DDPG4_ep90_y.csv'
     complexity_list = [8,10]
     maxRMSclamp_list = [0.001, 0.01, 0.05, 0.5]
-    runMME_different_config(path_to_MME_input_data, path_to_MME_output_data, 'jsonBackup/config.json', 'config.json', 'targetComplexity', complexity_list, 'maxRMSClamp', maxRMSclamp_list)
+    runMME_different_config(True, path_to_MME_input_data, path_to_MME_output_data, 3, 'jsonBackup/config.json', 'config.json', 'targetComplexity', complexity_list, 'maxRMSClamp', maxRMSclamp_list)
 
 
 if __name__ == '__main__':
     path_to_MME_input_data = os.path.expanduser('./MMEInputCSVs') + '/DQN_from_ep120_Episode_100_y.csv'
     path_to_MME_output_data = os.path.expanduser('./MMEOutputCSVs') + '/MMEout_DQN_from_ep120_Episode_100_y.csv'
     runMME_with_xy_outputs(path_to_MME_input_data, path_to_MME_output_data, 5)
-	
 	
 #fixed number of controlled organisms, using grown organisms for locomotion
 # And, But, Therefore - need, approach, benefit, computation
