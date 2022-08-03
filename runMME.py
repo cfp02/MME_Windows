@@ -134,13 +134,15 @@ def main():
 	complexity_list = [4, 8, 10, 12]
 	maxRMSclamp_list = [0.05, 0.5, 1, 2]
 	runMME_different_config(True, 0, path_to_MME_input_data, path_to_MME_output_data, 3, 'jsonBackup/config.json', 'config.json', 'targetComplexity', complexity_list, 'maxRMSClamp', maxRMSclamp_list)
-	# maybe run with even lower rms clamps and discard beginning data points (10 was too few)
+	# maybe run with even lower rms clamps and discard beginning data points (if 10 was too few)
 
 if __name__ == '__main__':
-	# path_to_MME_input_data = os.path.expanduser('./MMEInputCSVs') + '/DDPG4_ep90_Data_y.csv'
-	# path_to_MME_output_data = os.path.expanduser('./MMEOutputCSVs') + '/MMEout_DDPG4_ep90_Data_y_singleRobot.csv'
-	# runMME_with_xy_outputs(path_to_MME_input_data, path_to_MME_output_data, 5, 0)
-	main()
+	path_to_MME_input_data_y = os.path.expanduser('./MMEInputCSVs') + '/DDPG4_ep90_L.csv'
+	path_to_MME_output_data_y = os.path.expanduser('./MMEOutputCSVs') + '/MMEout_DDPG4_ep90_L_singleRobot.csv'
+	path_to_MME_input_data_x = os.path.expanduser('./MMEInputCSVs') + '/DDPG4_ep90_R.csv'
+	path_to_MME_output_data_x = os.path.expanduser('./MMEOutputCSVs') + '/MMEout_DDPG4_ep90_R_singleRobot.csv'
+	runMME_with_xy_outputs(path_to_MME_input_data_x, path_to_MME_output_data_x, 5, 0)
+	# main()
 	
 #fixed number of controlled organisms, using grown organisms for locomotion
 # And, But, Therefore - need, approach, benefit, computation
