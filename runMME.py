@@ -5,6 +5,7 @@ import math
 import time
 import os
 import json
+from turtle import fd
 
 
 
@@ -23,9 +24,11 @@ def populate_default_data(data_path, num_lines):
 def nn(var0, var1):
 	return ((var0 * var1) + 10 * (var1 ** 2))
 
-def runAlg(input_data_path, output_data_path, runs, which_robot):
+def runAlg(input_data_path, output_data_path, runs, which_robot, remove_low_threshold):
 	m_input_data_path = '' # modified data path based on whether one robot or all are being sampled; if all are then no change is made, if one robot is then a new csv is made with just that data
+	z_input_data_path = ''
 	temp_data_path = os.path.expanduser('./MMEInputCSVs/') + 'temp_MME_Input.csv'
+	z_temp_data_path = os.path.expanduser('./MMEInputCSVs/') + 'zero_removal_temp_MME_Input.csv'
 	if which_robot == 'all':
 		m_input_data_path = input_data_path
 	elif which_robot in [0,1,2,3]:
@@ -43,11 +46,29 @@ def runAlg(input_data_path, output_data_path, runs, which_robot):
 			ftemp.close()
 		m_input_data_path = temp_data_path
 		
-
+	if remove_low_threshold == False:
+		z_input_data_path = m_input_data_path
+	else:
+		with open(z_temp_data_path, "w", newline = '') as ztemp:
+			writer = csv.writer(ztemp)
+			with open(m_input_data_path, "r") as fdata:
+				reader = csv.reader(fdata)
+				line_num = 0
+				#if the last column is low, don't add it to the z_temp csv
+				for row in reader:
+					if float(row[-1]) > remove_low_threshold:
+						writer.writerow(row)
+						line_num += 1
+				print("Wrote " + str(line_num) + " to temp CSV after low value removal")
+		z_input_data_path = z_temp_data_path
+				
+				
+			
+	# open temp data path, go through the last column to see if it is less than 
 
 	for i in range(runs):
 		t = time.time()
-		p = subprocess.Popen([os.path.expanduser('test.exe'), m_input_data_path], text = True, stdout=subprocess.PIPE, encoding="utf")
+		p = subprocess.Popen([os.path.expanduser('test.exe'), z_input_data_path], text = True, stdout=subprocess.PIPE, encoding="utf")
 
 		eqn = ""
 		score = ""
@@ -78,14 +99,14 @@ def runAlg(input_data_path, output_data_path, runs, which_robot):
 		run = i+1
 		print("Run " + str(run) + ": " + str(deltaT))
 	
-def runMME_with_xy_outputs(path_to_MME_input_data, path_to_MME_output_data, loop_num, which_robot):
+def runMME_with_xy_outputs(path_to_MME_input_data, path_to_MME_output_data, loop_num, which_robot, low_value_threshold):
 	# path_to_MME_input_data = '../../CollectiveTransport_to_MME_parser/MMEInputCSVs'
 	# path_to_MME_output_data = '../../CollectiveTransport_to_MME_parser/MMEOutputCSVs'
 
 	for _ in range(loop_num):
 		s0 = time.time()
 		s = time.time()
-		runAlg(path_to_MME_input_data, path_to_MME_output_data, 1, which_robot)
+		runAlg(path_to_MME_input_data, path_to_MME_output_data, 1, which_robot, low_value_threshold)
 		deltaSy = time.time() - s
 		print("Total Y Time: " + str(deltaSy))
 
@@ -110,7 +131,7 @@ def edit_json_params(json_dict, param1_str, param1_list, param2_str, param2_list
 #	param_str : string for the item name from the config.json to edit
 # 	param_list: list of values to run for the modified item in the config file
 
-def runMME_different_config(change_params_bool, which_robot, path_to_MME_input_data, path_to_MME_output_data, num_loops, path_to_input_json, path_to_output_json, param1_str, param1_list, param2_str, param2_list):
+def runMME_different_config(change_params_bool, which_robot, low_value_threshold, path_to_MME_input_data, path_to_MME_output_data, num_loops, path_to_input_json, path_to_output_json, param1_str, param1_list, param2_str, param2_list):
 	if change_params_bool:
 		with open(path_to_input_json, 'r+') as f:
 			config = json.load(f)
@@ -124,25 +145,29 @@ def runMME_different_config(change_params_bool, which_robot, path_to_MME_input_d
 					writer = csv.writer(f2)
 					writer.writerow('')
 					writer.writerow([str(param1_str + '=' + str(param1_list[i]) + ', ' + param2_str + '=' + str(param2_list[j]))])
-				runMME_with_xy_outputs(path_to_MME_input_data, path_to_MME_output_data, num_loops, which_robot)          # Run mme with new parameters, loop n times for more data
+				runMME_with_xy_outputs(path_to_MME_input_data, path_to_MME_output_data, num_loops, which_robot, low_value_threshold)          # Run mme with new parameters, loop n times for more data
 	else:
-		runMME_with_xy_outputs(path_to_MME_input_data, path_to_MME_output_data, num_loops, which_robot)
+		runMME_with_xy_outputs(path_to_MME_input_data, path_to_MME_output_data, num_loops, which_robot, low_value_threshold)
 
 def main():
-	path_to_MME_input_data = os.path.expanduser('./MMEInputCSVs') + '/DDPG4_ep90_Data_y.csv'
-	path_to_MME_output_data = os.path.expanduser('./MMEOutputCSVs') + '/MMEout_DDPG4_ep90_Data_y_singleRobot.csv'
-	complexity_list = [4, 8, 10, 12]
-	maxRMSclamp_list = [0.05, 0.5, 1, 2]
-	runMME_different_config(True, 0, path_to_MME_input_data, path_to_MME_output_data, 3, 'jsonBackup/config.json', 'config.json', 'targetComplexity', complexity_list, 'maxRMSClamp', maxRMSclamp_list)
+	mmeFilesArray = ['/2022-09-11_AddProxSensorsThirdAttempt/DDPG_2obs_int_ep300_fourEps_x_PROX.csv', 
+					'/2022-09-11_AddProxSensorsThirdAttempt/DDPG_2obs_int_ep300_fourEps_y_PROX.csv'
+					]
+	for i in range(len(mmeFilesArray)):
+		path_to_MME_input_data = os.path.expanduser('./MMEInputCSVs') + mmeFilesArray[i]
+		print(path_to_MME_input_data)
+		path_to_MME_output_data = os.path.expanduser('./MMEOutputCSVs') + mmeFilesArray[i]
+		print(path_to_MME_output_data)
+		complexity_list = [8,10,14,18]
+		maxRMSclamp_list = [1,2, 5]
+		runMME_different_config(change_params_bool=True, which_robot = 'all', low_value_threshold= False, path_to_MME_input_data=path_to_MME_input_data, path_to_MME_output_data=path_to_MME_output_data, num_loops=3, path_to_input_json='config.json', path_to_output_json='config.json', param1_str='complexity', param1_list=complexity_list, param2_str='maxRMSclamp', param2_list=maxRMSclamp_list)
+	# runMME_different_config(False, 'all', False, path_to_MME_input_data, path_to_MME_output_data, 3, 'jsonBackup/config.json', 'config.json', 'targetComplexity', complexity_list, 'maxRMSClamp', maxRMSclamp_list)
 	# maybe run with even lower rms clamps and discard beginning data points (if 10 was too few)
 
 if __name__ == '__main__':
-	path_to_MME_input_data_y = os.path.expanduser('./MMEInputCSVs') + '/DDPG4_ep90_L.csv'
-	path_to_MME_output_data_y = os.path.expanduser('./MMEOutputCSVs') + '/MMEout_DDPG4_ep90_L_singleRobot.csv'
-	path_to_MME_input_data_x = os.path.expanduser('./MMEInputCSVs') + '/DDPG4_ep90_R.csv'
-	path_to_MME_output_data_x = os.path.expanduser('./MMEOutputCSVs') + '/MMEout_DDPG4_ep90_R_singleRobot.csv'
-	runMME_with_xy_outputs(path_to_MME_input_data_x, path_to_MME_output_data_x, 5, 0)
-	# main()
-	
-#fixed number of controlled organisms, using grown organisms for locomotion
-# And, But, Therefore - need, approach, benefit, computation
+	# path_to_MME_input_data_y = os.path.expanduser('./MMEInputCSVs') + '/DDPG4_ep90_L.csv'
+	# path_to_MME_output_data_y = os.path.expanduser('./MMEOutputCSVs') + '/MMEout_DDPG4_ep90_L_singleRobot.csv'
+	# path_to_MME_input_data_x = os.path.expanduser('./MMEInputCSVs') + '/DDPG4_ep90_R.csv'
+	# path_to_MME_output_data_x = os.path.expanduser('./MMEOutputCSVs') + '/MMEout_DDPG4_ep90_R_singleRobot.csv'
+	# runMME_with_xy_outputs(path_to_MME_input_data_x, path_to_MME_output_data_x, 5, 0, False)
+	main()

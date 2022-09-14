@@ -1,0 +1,3 @@
+
+"complexity=8, maxRMSclamp=1"
+"div(mul(add(var6, sub(var4, var11)), pow(var1, 5.930000)), -0.120000)",0.649439,0.781927,10,75 / 75

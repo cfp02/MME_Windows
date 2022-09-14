@@ -1,4 +1,0 @@
-"Complexity: 9, max RMS clamp: 0.75"
-"add(div(var9, -22.370000), mul(mul(var2, var8), neg(var3)))",0.6498,0.584139,9,75 / 75
-"inv(sub(-99.980000, mul(add(23.470000, var6), sub(var7, var6))))",0.64997,0.583566,9,75 / 75
-

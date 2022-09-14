@@ -1,0 +1,62 @@
+
+"complexity=8, maxRMSclamp=1"
+
+"complexity=8, maxRMSclamp=1"
+"neg(pow(div(-2.350000, div(sub(var4, var2), var1)), 2.510000))",0.649247,0.792463,9,75 / 75
+"inv(mul(sub(1.820000, pow(var2, 1.880000)), sub(var2, var7)))",0.6494,0.793972,9,75 / 75
+"mul(pow(var1, 5.730000), sub(mul(-25.300000, add(0.580000, var4)), var6))",0.649293,0.792957,10,75 / 75
+
+"complexity=8, maxRMSclamp=2"
+"div(div(-0.360000, sub(var2, mul(var4, 1.960000))), add(-1.290000, var2))",0.648834,0.793148,10,75 / 75
+"div(div(pow(var1, 2.430000), var9), sub(add(0.860000, var4), var6))",0.649308,0.79326,10,75 / 75
+"div(4.330000, mul(pow(var2, 3.030000), sub(mul(var4, 1.980000), var2)))",0.649197,0.792915,10,75 / 75
+
+"complexity=8, maxRMSclamp=5"
+"div(var1, sub(0.430000, mul(sub(var2, var7), mul(var2, 0.610000))))",0.649539,0.793388,10,75 / 75
+"div(pow(var1, 3.020000), div(add(div(-0.500000, var1), var4), 2.130000))",0.649213,0.792917,10,75 / 75
+"div(div(mul(var1, pow(var1, 3.790000)), sub(0.870000, var4)), -0.170000)",0.649258,0.793215,10,75 / 75
+
+"complexity=10, maxRMSclamp=1"
+"div(5.590000, mul(sub(var7, pow(var2, 3.320000)), sub(var2, var7)))",0.649374,0.79319,10,75 / 75
+"div(var5, mul(sub(var2, div(var4, 0.520000)), sub(1.090000, var2)))",0.648823,0.793136,10,75 / 75
+"mul(24.840000, mul(pow(var1, 5.680000), sub(var8, add(0.640000, var4))))",0.649333,0.792981,10,75 / 75
+
+"complexity=10, maxRMSclamp=2"
+"mul(div(pow(var1, 3.790000), 0.170000), div(var1, add(-0.870000, var4)))",0.649256,0.793215,10,75 / 75
+"div(pow(var1, 3.110000), add(mul(var2, -0.220000), div(var4, 2.290000)))",0.649203,0.792916,10,75 / 75
+"div(div(add(var6, mul(var4, 2.930000)), pow(var2, 5.970000)), -0.100000)",0.649395,0.792364,10,75 / 75
+
+"complexity=10, maxRMSclamp=5"
+"mul(mul(add(-24.310000, var3), pow(var1, 5.670000)), add(0.650000, var4))",0.649298,0.792892,10,75 / 75
+"mul(-7.660000, pow(add(mul(var4, pow(var1, 2.670000)), var1), 4.790000))",0.649154,0.791787,10,75 / 75
+"div(pow(var1, 1.150000), sub(var7, add(add(-2.200000, var6), var6)))",0.649472,0.79369,10,75 / 75
+
+"complexity=14, maxRMSclamp=1"
+"div(sub(0.150000, var1), add(sub(mul(var7, -0.930000), var1), var6))",0.64941,0.793912,10,75 / 75
+"div(-5.220000, mul(sub(var7, pow(var1, -4.620000)), add(-0.880000, var4)))",0.649165,0.793001,10,75 / 75
+"div(mul(-3.040000, pow(var1, 3.670000)), sub(1.440000, add(var1, var4)))",0.649287,0.79297,10,75 / 75
+
+"complexity=14, maxRMSclamp=2"
+"mul(5.420000, div(pow(var1, 4.730000), add(-0.850000, add(var8, var4))))",0.649113,0.793138,10,75 / 75
+"mul(pow(sub(var2, mul(var1, var7)), -3.400000), div(-5.310000, var2))",0.649391,0.792291,10,75 / 75
+"div(add(var4, mul(var1, -5.240000)), pow(sub(var2, var4), 3.330000))",0.649404,0.792061,10,75 / 75
+
+"complexity=14, maxRMSclamp=5"
+"div(mul(var1, pow(sub(var2, var7), -1.450000)), sub(1.210000, var2))",0.649147,0.792843,10,75 / 75
+"mul(4.300000, div(pow(var1, 3.030000), sub(div(var4, 0.500000), var2)))",0.649179,0.792918,10,75 / 75
+"div(pow(var1, 3.180000), div(sub(var2, add(0.370000, var7)), -3.660000))",0.649191,0.793024,10,75 / 75
+
+"complexity=18, maxRMSclamp=1"
+"div(-4.720000, mul(var2, pow(sub(var2, div(var7, var2)), 3.220000)))",0.649416,0.792162,10,75 / 75
+"div(-3.310000, add(-1.410000, mul(sub(var2, var7), pow(var2, 2.840000))))",0.649023,0.793145,10,75 / 75
+"div(var1, div(sub(div(var7, 0.300000), pow(var6, 2.650000)), 3.420000))",0.649114,0.793466,10,75 / 75
+
+"complexity=18, maxRMSclamp=2"
+"div(pow(var1, 1.780000), add(0.310000, sub(add(var4, var9), var6)))",0.64936,0.793396,10,75 / 75
+"div(-1.250000, add(sub(-12.900000, var4), add(mul(var2, 8.910000), var3)))",0.643813,0.788951,10,75 / 75
+"div(-7.660000, add(var0, pow(sub(pow(var2, 1.310000), var4), 3.760000)))",0.648833,0.791529,10,75 / 75
+
+"complexity=18, maxRMSclamp=5"
+"neg(pow(neg(div(div(1.710000, var2), sub(var7, var2))), 1.880000))",0.649452,0.793778,10,75 / 75
+"div(pow(mul(var1, 1.420000), 4.700000), add(var8, add(-0.840000, var4)))",0.648989,0.79314,10,75 / 75
+"inv(mul(var2, add(var7, sub(var6, pow(var6, 2.020000)))))",0.649816,0.793975,9,75 / 75

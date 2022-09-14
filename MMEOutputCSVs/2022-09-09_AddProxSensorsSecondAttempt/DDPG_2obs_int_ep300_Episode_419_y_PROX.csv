@@ -1,0 +1,60 @@
+
+"complexity=8, maxRMSclamp=0.5"
+"mul(div(0.130000, add(-1.810000, var6)), div(var4, sub(var4, var6)))",0.647891,0.48314,10,75 / 75
+"div(var4, add(-23.940000, add(mul(var28, 3.500000), mul(var5, 43.600000))))",0.641185,0.482729,10,75 / 75
+"div(var4, mul(-12.570000, add(div(-12.400000, sub(6.810000, var28)), var6)))",0.644917,0.480989,10,75 / 75
+
+"complexity=8, maxRMSclamp=1"
+"div(add(var30, var4), sub(-35.350000, div(sub(-64.450000, var30), var6)))",0.64943,0.476957,10,75 / 75
+"div(add(var4, pow(var7, 2.000000)), sub(-28.090000, div(-51.060000, var6)))",0.64996,0.483654,10,75 / 75
+"sub(div(var4, add(add(-38.300000, mul(var5, 69.830000)), var30)), var26)",0.64572,0.476514,10,75 / 75
+
+"complexity=8, maxRMSclamp=2"
+"div(var1, div(add(-23.930000, sub(34.280000, mul(var6, 5.690000))), var4))",0.648057,0.492331,10,75 / 75
+"div(sub(-0.400000, add(var4, var22)), add(13.550000, div(-23.560000, var2)))",0.643662,0.512831,10,75 / 75
+"sub(div(var4, sub(add(38.100000, var30), mul(var6, 20.900000))), var26)",0.65,0.476072,10,75 / 75
+
+"complexity=10, maxRMSclamp=0.5"
+"mul(div(var4, pow(var1, -9.960000)), div(-59.970000, add(-1.810000, var6)))",0.642091,0.47521,10,75 / 75
+"div(var4, mul(sub(31.490000, pow(var6, 5.800000)), sub(0.620000, var1)))",0.632768,0.478479,10,75 / 75
+"div(sub(-0.240000, var4), sub(var2, add(19.940000, div(var6, -0.100000))))",0.645001,0.4899,10,75 / 75
+
+"complexity=10, maxRMSclamp=1"
+"div(div(var4, add(-1.620000, var2)), mul(-33.940000, add(-1.810000, var6)))",0.640197,0.479191,10,75 / 75
+"div(mul(var7, pow(var1, 8.140000)), sub(-0.110000, mul(var5, -0.200000)))",0.641398,0.477488,10,75 / 75
+"div(add(0.360000, var4), add(15.510000, div(8.820000, sub(var19, var1))))",0.644945,0.503597,10,75 / 75
+
+"complexity=10, maxRMSclamp=2"
+"div(div(var4, add(-1.660000, var7)), add(20.090000, mul(var5, -36.510000)))",0.634694,0.482467,10,75 / 75
+"div(add(var4, var29), sub(-26.190000, sub(mul(var5, -47.710000), var29)))",0.647716,0.480807,10,75 / 75
+"div(mul(61.370000, mul(var4, pow(var1, 10.000000))), sub(1.810000, var6))",0.643079,0.47521,10,75 / 75
+
+"complexity=14, maxRMSclamp=0.5"
+"div(var4, mul(sub(var4, var2), sub(16.720000, mul(var5, 30.310000))))",0.636154,0.481176,10,75 / 75
+"div(add(0.390000, var4), add(var2, mul(-0.100000, pow(var2, 5.240000))))",0.646622,0.505965,10,75 / 75
+"div(sub(add(var30, var4), var14), add(-25.830000, div(47.070000, var6)))",0.642347,0.48096,10,75 / 75
+
+"complexity=14, maxRMSclamp=1"
+"div(add(var24, add(var30, var4)), sub(-26.320000, div(-47.950000, var6)))",0.636201,0.482654,10,75 / 75
+"div(div(var4, sub(var2, var5)), sub(3.130000, div(var2, var5)))",0.648411,0.509315,10,75 / 75
+"div(mul(var4, add(var28, pow(div(var5, 0.520000), 55.530000))), -2.100000)",0.644243,0.488378,10,75 / 75
+
+"complexity=14, maxRMSclamp=2"
+"mul(var1, div(add(var4, var30), sub(-13.360000, div(-24.330000, var6))))",0.64575,0.481117,10,75 / 75
+"div(div(var4, mul(0.210000, pow(var2, 8.380000))), add(-0.550000, var5))",0.64318,0.477455,10,75 / 75
+"div(var4, mul(sub(var6, var7), add(14.470000, div(-7.970000, var5))))",0.641564,0.482013,10,75 / 75
+
+"complexity=18, maxRMSclamp=0.5"
+"inv(sub(var29, div(sub(-20.560000, div(-11.300000, var5)), var4)))",0.647509,0.48145,9,75 / 75
+"div(var4, sub(-21.230000, sub(mul(var5, -37.630000), add(var1, var24))))",0.642036,0.493399,10,75 / 75
+"sub(div(var4, sub(-0.210000, pow(add(-0.900000, var2), inf))), var26)",0.615376,0.474807,10,75 / 75
+
+"complexity=18, maxRMSclamp=1"
+"div(mul(var4, pow(div(var5, 0.540000), 42.860000)), sub(1.580000, var2))",0.641461,0.480556,10,75 / 75
+"sub(div(var4, sub(var1, add(21.360000, div(-37.870000, var6)))), var26)",0.637377,0.488472,10,75 / 75
+"div(div(var4, sub(1.670000, var7)), mul(-37.780000, sub(0.550000, var5)))",0.641116,0.482583,10,75 / 75
+
+"complexity=18, maxRMSclamp=2"
+"div(add(var24, add(var4, var30)), add(-25.890000, mul(var5, 47.160000)))",0.647687,0.482634,10,75 / 75
+"div(var4, mul(sub(27.200000, mul(var4, 16.770000)), sub(var1, var9)))",0.645157,0.519836,10,75 / 75
+"div(div(var4, add(sub(-11.320000, mul(var5, -20.600000)), var24)), var2)",0.644266,0.492294,10,75 / 75
