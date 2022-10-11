@@ -80,6 +80,6 @@
             ]
         ]
     },
-    "complexity": 14,
-    "maxRMSclamp": 3
+    "complexity": 18,
+    "maxRMSclamp": 1
 }

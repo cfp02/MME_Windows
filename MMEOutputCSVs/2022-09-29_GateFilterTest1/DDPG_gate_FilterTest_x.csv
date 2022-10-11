@@ -1,0 +1,28 @@
+
+"complexity=8, maxRMSclamp=1"
+"inv(sub(mul(5.860000, sub(add(1.770000, sub(add(var4, var2), var6)), var6)), var6))",0.620119,2.82283,13,75 / 75
+"add(add(-2.630000, var6), mul(var4, div(mul(var5, -0.160000), sub(4.870000, div(var5, 0.100000)))))",0.6447,2.85084,14,75 / 75
+
+"complexity=14, maxRMSclamp=1"
+"div(0.510000, sub(sub(var7, div(0.160000, add(1.210000, var3))), add(11.840000, mul(var5, -22.610000))))",0.636054,2.78289,14,75 / 75
+"mul(pow(var5, 6.920000), add(-98.950000, div(var4, mul(0.280000, add(-1.500000, mul(var5, 3.080000))))))",0.645712,2.83828,14,75 / 75
+"inv(mul(sub(49.240000, pow(var2, 3.960000)), add(2.030000, sub(div(var4, 23.890000), var6))))",0.640476,2.84859,13,75 / 75
+
+"complexity=14, maxRMSclamp=3"
+"inv(mul(0.750000, mul(var6, sub(add(mul(59.680000, sub(var5, var1)), var4), var6))))",0.633586,2.75914,13,75 / 75
+"div(-1.570000, add(add(-98.250000, div(var9, add(mul(var6, 0.240000), var4))), mul(var6, 47.600000)))",0.641309,2.82862,14,75 / 75
+
+
+"complexity=14, maxRMSclamp=1"
+"neg(div(add(0.880000, mul(var2, var4)), sub(add(-93.440000, inv(var10)), div(-45.330000, var5))))",0.64601,2.85814,14,75 / 75
+"inv(sub(add(mul(var6, -16.110000), var4), add(div(-71.020000, var6), var6)))",0.640317,2.87661,11,75 / 75
+"sub(-0.210000, div(add(var5, var4), div(sub(pow(var6, 5.320000), add(45.370000, var4)), 3.130000)))",0.639811,2.83062,14,75 / 75
+
+"complexity=14, maxRMSclamp=3"
+"add(-0.190000, div(add(var5, add(0.150000, var7)), mul(-23.290000, add(add(-4.100000, var6), var6))))",0.645763,2.83514,14,75 / 75
+"sub(div(var7, sub(mul(-43.550000, add(-2.150000, var6)), div(var6, var5))), pow(var5, 1.310000))",0.645041,2.87212,14,75 / 75
+"div(add(add(-6.640000, add(mul(var6, 2.410000), var6)), var4), add(-46.990000, div(96.300000, var6)))",0.649539,2.83747,14,75 / 75
+
+"complexity=18, maxRMSclamp=1"
+"div(add(add(0.380000, mul(var0, pow(var4, 2.000000))), var4), add(-36.140000, div(74.010000, var6)))",0.644618,2.83564,14,75 / 75
+"mul(var5, div(mul(var2, add(-7.220000, div(add(0.400000, var4), add(-0.490000, var5)))), 67.090000))",0.646789,2.85646,14,75 / 75

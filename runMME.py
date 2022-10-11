@@ -150,8 +150,8 @@ def runMME_different_config(change_params_bool, which_robot, low_value_threshold
 		runMME_with_xy_outputs(path_to_MME_input_data, path_to_MME_output_data, num_loops, which_robot, low_value_threshold)
 
 def main():
-	mmeFilesArray = ['/2022-10-10_GateFilterTest1/DDPG_gate_FilterTest_x.csv', 
-					'/2022-10-10_GateFilterTest1/DDPG_gate_FilterTest_y.csv'
+	mmeFilesArray = ['/2022-09-29_GateFilterTest1/DDPG_gate_FilterTest_x.csv', 
+					'/2022-09-29_GateFilterTest1/DDPG_gate_FilterTest_y.csv'
 					]
 	for i in range(len(mmeFilesArray)):
 		path_to_MME_input_data = os.path.expanduser('./MMEInputCSVs') + mmeFilesArray[i]
