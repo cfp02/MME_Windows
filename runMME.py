@@ -126,6 +126,7 @@ def edit_json_params(json_dict, param1_str, param1_list, param2_str, param2_list
 ####
 ## Runs MME on an input CSV
 #	change_params_bool : boolean for changing the config.json parameters
+#   which_robot : which robot to run MME on, or 'all' for all robots
 #	num_loops : number of time to run MME for each configuration combination
 #	param_str : string for the item name from the config.json to edit
 # 	param_list: list of values to run for the modified item in the config file
