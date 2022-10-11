@@ -4,7 +4,7 @@
     "populationSize":4000,
     "generationCount":75,
     "survivalRatio":0.05,
-    "targetComplexity":9,
+    "targetComplexity":14,
     "parsimonyRatio":0.65,
     "accuracyCompletion":0.02,
     "useCCMScoring":false,

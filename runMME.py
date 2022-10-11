@@ -5,7 +5,6 @@ import math
 import time
 import os
 import json
-from turtle import fd
 
 
 
@@ -150,24 +149,19 @@ def runMME_different_config(change_params_bool, which_robot, low_value_threshold
 		runMME_with_xy_outputs(path_to_MME_input_data, path_to_MME_output_data, num_loops, which_robot, low_value_threshold)
 
 def main():
-	mmeFilesArray = ['/2022-09-11_AddProxSensorsThirdAttempt/DDPG_2obs_int_ep300_fourEps_x_PROX.csv', 
-					'/2022-09-11_AddProxSensorsThirdAttempt/DDPG_2obs_int_ep300_fourEps_y_PROX.csv'
+	mmeFilesArray = ['/2022-10-10_GateFilterTest1/DDPG_gate_FilterTest_x.csv', 
+					'/2022-10-10_GateFilterTest1/DDPG_gate_FilterTest_y.csv'
 					]
 	for i in range(len(mmeFilesArray)):
 		path_to_MME_input_data = os.path.expanduser('./MMEInputCSVs') + mmeFilesArray[i]
 		print(path_to_MME_input_data)
 		path_to_MME_output_data = os.path.expanduser('./MMEOutputCSVs') + mmeFilesArray[i]
 		print(path_to_MME_output_data)
-		complexity_list = [8,10,14,18]
-		maxRMSclamp_list = [1,2, 5]
-		runMME_different_config(change_params_bool=True, which_robot = 'all', low_value_threshold= False, path_to_MME_input_data=path_to_MME_input_data, path_to_MME_output_data=path_to_MME_output_data, num_loops=3, path_to_input_json='config.json', path_to_output_json='config.json', param1_str='complexity', param1_list=complexity_list, param2_str='maxRMSclamp', param2_list=maxRMSclamp_list)
+		complexity_list = [14,18]
+		maxRMSclamp_list = [1,3]
+		runMME_different_config(change_params_bool=True, which_robot = 'all', low_value_threshold= False, path_to_MME_input_data=path_to_MME_input_data, path_to_MME_output_data=path_to_MME_output_data, num_loops=3, path_to_input_json='./jsonBackup/config.json', path_to_output_json='config.json', param1_str='complexity', param1_list=complexity_list, param2_str='maxRMSclamp', param2_list=maxRMSclamp_list)
 	# runMME_different_config(False, 'all', False, path_to_MME_input_data, path_to_MME_output_data, 3, 'jsonBackup/config.json', 'config.json', 'targetComplexity', complexity_list, 'maxRMSClamp', maxRMSclamp_list)
 	# maybe run with even lower rms clamps and discard beginning data points (if 10 was too few)
 
 if __name__ == '__main__':
-	# path_to_MME_input_data_y = os.path.expanduser('./MMEInputCSVs') + '/DDPG4_ep90_L.csv'
-	# path_to_MME_output_data_y = os.path.expanduser('./MMEOutputCSVs') + '/MMEout_DDPG4_ep90_L_singleRobot.csv'
-	# path_to_MME_input_data_x = os.path.expanduser('./MMEInputCSVs') + '/DDPG4_ep90_R.csv'
-	# path_to_MME_output_data_x = os.path.expanduser('./MMEOutputCSVs') + '/MMEout_DDPG4_ep90_R_singleRobot.csv'
-	# runMME_with_xy_outputs(path_to_MME_input_data_x, path_to_MME_output_data_x, 5, 0, False)
 	main()

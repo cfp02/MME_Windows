@@ -1,0 +1,7 @@
+
+"complexity=14, maxRMSclamp=1"
+"div(add(var1, var4), add(-21.450000, div(div(add(78.270000, div(var4, 0.210000)), var6), var6)))",0.634461,0.662167,14,75 / 75
+"mul(mul(-0.520000, div(var4, add(4.690000, div(var5, -0.110000)))), mul(var4, add(0.450000, var4)))",0.646107,0.672005,14,75 / 75
+"div(add(var1, var4), add(add(-8.380000, var4), inv(add(0.420000, mul(var1, neg(var1))))))",0.634122,0.674993,14,75 / 75
+
+"complexity=14, maxRMSclamp=2"

@@ -1,0 +1,13 @@
+
+"complexity=8, maxRMSclamp=1"
+"inv(sub(mul(5.860000, sub(add(1.770000, sub(add(var4, var2), var6)), var6)), var6))",0.620119,2.82283,13,75 / 75
+"add(add(-2.630000, var6), mul(var4, div(mul(var5, -0.160000), sub(4.870000, div(var5, 0.100000)))))",0.6447,2.85084,14,75 / 75
+
+"complexity=14, maxRMSclamp=1"
+"div(0.510000, sub(sub(var7, div(0.160000, add(1.210000, var3))), add(11.840000, mul(var5, -22.610000))))",0.636054,2.78289,14,75 / 75
+"mul(pow(var5, 6.920000), add(-98.950000, div(var4, mul(0.280000, add(-1.500000, mul(var5, 3.080000))))))",0.645712,2.83828,14,75 / 75
+"inv(mul(sub(49.240000, pow(var2, 3.960000)), add(2.030000, sub(div(var4, 23.890000), var6))))",0.640476,2.84859,13,75 / 75
+
+"complexity=14, maxRMSclamp=3"
+"inv(mul(0.750000, mul(var6, sub(add(mul(59.680000, sub(var5, var1)), var4), var6))))",0.633586,2.75914,13,75 / 75
+"div(-1.570000, add(add(-98.250000, div(var9, add(mul(var6, 0.240000), var4))), mul(var6, 47.600000)))",0.641309,2.82862,14,75 / 75

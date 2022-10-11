@@ -3,7 +3,7 @@
     "populationSize": 4000,
     "generationCount": 75,
     "survivalRatio": 0.05,
-    "targetComplexity": 10,
+    "targetComplexity": 14,
     "parsimonyRatio": 0.65,
     "accuracyCompletion": 0.02,
     "useCCMScoring": false,
@@ -80,6 +80,6 @@
             ]
         ]
     },
-    "complexity": 8,
-    "maxRMSclamp": 1
+    "complexity": 14,
+    "maxRMSclamp": 3
 }

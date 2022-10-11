@@ -1,3 +1,27 @@
 
 "complexity=8, maxRMSclamp=1"
 "div(mul(add(var6, sub(var4, var11)), pow(var1, 5.930000)), -0.120000)",0.649439,0.781927,10,75 / 75
+
+"complexity=14, maxRMSclamp=1"
+"inv(mul(1.360000, add(mul(-0.280000, pow(var1, -3.370000)), var7)))",0.649423,0.783397,9,75 / 75
+"inv(sub(10.000000, add(add(var11, var0), mul(var2, 7.540000))))",0.636703,0.768367,9,75 / 75
+"div(-0.380000, add(var3, mul(0.110000, pow(var2, 4.560000))))",0.646687,0.780726,8,75 / 75
+
+"complexity=14, maxRMSclamp=2"
+"mul(-3.660000, div(pow(var1, 2.960000), sub(var2, var7)))",0.649579,0.783733,8,75 / 75
+"inv(add(div(-15.170000, sub(-0.990000, var8)), div(var2, -0.100000)))",0.641956,0.77469,9,75 / 75
+"inv(sub(sub(sub(var6, var3), var11), pow(var2, 2.640000)))",0.637394,0.768154,9,75 / 75
+
+"complexity=14, maxRMSclamp=5"
+"inv(sub(15.270000, mul(add(var8, var2), div(var6, 0.170000))))",0.640634,0.772967,9,75 / 75
+"div(neg(mul(5.470000, add(var6, var4))), pow(var2, 5.320000))",0.649541,0.783205,9,75 / 75
+"div(sub(-5.550000, mul(var4, 2.870000)), pow(var2, 4.340000))",0.649539,0.783853,8,75 / 75
+
+"complexity=18, maxRMSclamp=1"
+"div(var1, div(div(sub(var7, inv(var1)), var1), 1.890000))",0.649812,0.784166,9,75 / 75
+"inv(add(sub(mul(var2, -7.270000), var11), sub(9.560000, var0)))",0.636044,0.768451,9,75 / 75
+"div(0.710000, sub(add(var7, var6), pow(var2, 2.300000)))",0.649564,0.783192,8,75 / 75
+
+"complexity=18, maxRMSclamp=2"
+"inv(neg(add(var11, div(add(var2, var3), var1))))",0.65,0.779388,8,75 / 75
+"inv(mul(div(31.240000, var2), sub(1.570000, add(var8, var2))))",0.647611,0.773407,9,75 / 75
